@@ -7,19 +7,14 @@ jQuery SmartSearch by Gregory Zhdanov v0.1
   $.fn.smartsearch = function(options) {
       var array = this;
       var query = options.query;
-      console.log('__SS__ query', query);
       var queryarr = query.split(' ');
       var filtered = [];
       var fields = options.fields.split(',');
       var synonyms = options.synonyms;
-      console.log('__SS__ synonyms', synonyms);
-      console.log('__SS__', this);
       function makeSearch(word, callback) {
-            console.log('__SS__ цщкккв', word);
             if (synonyms !== undefined) {
                 if (synonyms[word]) {
                    word  = synonyms[word];
-                   console.log('__SS__ wordaftersynonymization', word)
                 }
             }
             var regex = new RegExp(word.toLowerCase());
@@ -35,7 +30,6 @@ jQuery SmartSearch by Gregory Zhdanov v0.1
                 var filterexp = regex.test(searchstring.toLowerCase());
                 callback(null, filterexp);
             }, function(err, results) {
-                console.log('__SS__ search results', results);
                 filtered = results;
                 callback(null, results);
             });
