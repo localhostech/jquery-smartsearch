@@ -1,7 +1,6 @@
 /*
-
 jQuery SmartSearch by Gregory Zhdanov v0.1
-
+https://github.com/localhostech/jquery-smartsearch
 */
 (function( $ ) {
   $.fn.smartsearch = function(options) {
