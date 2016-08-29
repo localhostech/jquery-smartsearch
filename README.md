@@ -28,3 +28,4 @@ filtered = [
 
 */
 ```
+[Download](https://raw.githubusercontent.com/localhostech/jquery-smartsearch/master/filter.js)
