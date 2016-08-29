@@ -3,7 +3,7 @@ Requires `async` and `jQuery` to work
 
 Example:
 
-```
+```javascript
 var movies = [
   {name: "The Godfather", year: "1972", genere: "Drama"},
   {name: "The Lord of the Rings: The Fellowship of the Ring ", year: "2001", genere: "Adventure"},
