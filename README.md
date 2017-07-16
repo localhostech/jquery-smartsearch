@@ -15,7 +15,7 @@ var filtered = $(movies).smartsearch({
   query: "Drama",
   fields: "name,year,genere",
   synonyms: {
-    forest: "forrest"
+    "forest": "forrest"
   }
 });
 
